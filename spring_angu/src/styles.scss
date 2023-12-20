@@ -1,0 +1,108 @@
+.FF {
+  background: #abcdef;
+  font-family: Assistant, sans-serif;
+  display: flex;
+  min-height: 100vh;
+} /* You can add global styles to this file, and also import other style files */
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+//style tableau
+.container {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -30%);
+  margin: 0;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  max-height: 500px;
+  overflow: auto;
+}
+.conn{
+  top: 30%;
+
+  position: absolute;
+  left: 85%;
+
+}
+.fffd{
+  background-color: #49a09d;
+  border-radius: 40%;
+}
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49a09d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 10px;
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead {
+  th {
+    background-color: #55608f;
+  }
+}
+
+tbody {
+  tr {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  td {
+    position: relative;
+    &:hover {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

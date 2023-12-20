@@ -1,0 +1,64 @@
+<div class="wrapper">
+  <div class="section">
+    <div class="top_navbar">
+      <div class="hamburger">
+        <a href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="profile">
+      <img src="assets/aaa.png" alt="profile_picture" />
+      <h2>S&A</h2>
+    </div>
+    <ul>
+      <li>
+        <a class="active" routerLink="admin">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <span class="item">admin</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="prof">
+          <span class="icon"><i class="fas fa-desktop"></i></span>
+          <span class="item">prof</span>
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="semestre">
+          <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+          <span class="item">semestre</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="filiere">
+          <span class="icon"><i class="fas fa-database"></i></span>
+          <span class="item">filiere</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="module">
+          <span class="icon"><i class="fas fa-chart-line"></i></span>
+          <span class="item">module</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="element">
+          <span class="icon"><i class="fas fa-user-shield"></i></span>
+          <span class="item">element</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="etudiant">
+          <span class="icon"><i class="fas fa-cog"></i></span>
+          <span class="item">etudiant</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

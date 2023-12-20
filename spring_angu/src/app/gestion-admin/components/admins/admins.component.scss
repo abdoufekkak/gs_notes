@@ -1,0 +1,11 @@
+.mod_sup{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; /* Centre verticalement */
+    align-items: center;
+}
+
+.mod_sup > * {
+    margin-right: 15px; /* Par exemple, 10px d'espace horizontal entre les éléments */
+  }
+  

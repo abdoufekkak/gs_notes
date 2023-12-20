@@ -1,0 +1,47 @@
+<div>
+  <div  class="conn">
+    <div class="fffd">
+    <mat-icon class="add-icon" (click)="openDialog()">add</mat-icon>
+  </div>
+  </div>
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>nom</th>
+        <th>username</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody class="scroll">
+      <tr *ngFor="let admin of admins">
+        <td>{{ admin.Id }}</td>
+        <td>{{ admin.nom }}</td>
+        <td>{{ admin.username }}</td>
+        <td>
+          <div>
+            <button mat-icon-button>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>asdfg</td>
+        <td>zdfg</td>
+        <td>asdf</td>
+        <td>
+          <div class="mod_sup">
+            <mat-icon class="edit-icon">edit</mat-icon>
+            <mat-icon class="delete-icon">delete</mat-icon>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</div>

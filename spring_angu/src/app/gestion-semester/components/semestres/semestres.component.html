@@ -1,0 +1,24 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>libelle</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody class="scroll">
+      <td>2</td>
+      <td>SpringBoot</td>
+      <div class="mod_sup">
+        <mat-icon class="edit-icon">edit</mat-icon>
+        <mat-icon class="delete-icon">delete</mat-icon>
+      </div>
+      <tr *ngFor="let semestre of semestres">
+        <td>{{ semestre.id }}</td>
+        <td>{{ semestre.libelle }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

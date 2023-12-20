@@ -1,0 +1,27 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>nom</th>
+        <th>username</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody class="scroll">
+      <td>1</td>
+      <td>salma</td>
+      <td>slima</td>
+      <div class="mod_sup">
+        <mat-icon class="edit-icon">edit</mat-icon>
+        <mat-icon class="delete-icon">delete</mat-icon>
+      </div>
+      <tr *ngFor="let prof of profs">
+        <td>{{ prof.Id }}</td>
+        <td>{{ prof.nom }}</td>
+        <td>{{ prof.username }}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
